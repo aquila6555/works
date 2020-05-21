@@ -1,3 +1,8 @@
+*{
+  scroll-behavior: smooth;
+}
+
+
 .selector-for-some-widget {
     box-sizing: content-box;
   }
@@ -6,7 +11,31 @@ body{
     background-color: rgb(252, 252, 252);
     padding-top: 3rem;
     padding-bottom: 3rem;
+
 }
+
+
+
+
+
+.simplescrollup__button {
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  transition: 1s all;
+  z-index: 10000;
+}
+.simplescrollup__button--show {
+  transform: translateX(0);
+}
+.simplescrollup__button--hide {
+  transform: translateX(150px);
+  -webkit-transform: translateX(150px);
+  -moz-transform: translateX(150px);
+  -ms-transform: translateX(150px);
+  -o-transform: translateX(150px);
+}
+
 .bd-placeholder-img {
   font-size: 1.125rem;
   text-anchor: middle;
